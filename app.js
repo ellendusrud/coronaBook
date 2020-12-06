@@ -12,8 +12,8 @@ http.createServer((req, res) => {
     console.log('8080 포트 대기중');
 });
 
-function hello() {
+/*function hello() {
     console.log('Hello World');
 }
 
-hello();
+hello();*/
