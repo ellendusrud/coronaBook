@@ -12,23 +12,18 @@ nav(class=['sb-sidenav', 'accordion'] class=sidenavStyle)#sidenavAccordion
                     i.fas.fa-tachometer-alt
                 | 실시간 코로나 알림판
                 
-            .sb-sidenav-menu-heading
-                | -------------------
-    
-
-            a.nav-link(href='항공운항정보.html')
+            a.nav-link(href='항공운항정보.html') 
                 .sb-nav-link-icon
-                    i.fas.fa-columns
+                    i.fas.fa-file-alt
                 | 항공 운항정보
 
             
-            a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#collapsePages' aria-expanded='false' aria-controls='collapsePages')
+            a.nav-link(href='layout-static.html') 
                 .sb-nav-link-icon
-                    i.fas.fa-book-open
+                    i.fas.fa-plane-arrival
                 | 입출국 후 행동방침
                                     
-                .sb-sidenav-collapse-arrow
-                    i.fas.fa-angle-down
+
             #collapsePages.collapse(aria-labelledby='headingTwo', data-parent='#sidenavAccordion')
                 nav.sb-sidenav-menu-nested.nav.accordion#sidenavAccordionPages
                     a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#pagesCollapseAuth' aria-expanded='false' aria-controls='pagesCollapseAuth')
@@ -52,7 +47,7 @@ nav(class=['sb-sidenav', 'accordion'] class=sidenavStyle)#sidenavAccordion
 
             a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#collapseLayouts' aria-expanded='false' aria-controls='collapseLayouts')
                 .sb-nav-link-icon
-                    i.fas.fa-columns
+                    i.fas.fa-clipboard-list
                 | 코로나 경험 게시판
                 .sb-sidenav-collapse-arrow
                     i.fas.fa-angle-down
@@ -86,19 +81,31 @@ nav(class=['sb-sidenav', 'accordion'] class=sidenavStyle)#sidenavAccordion
 
                             
             .sb-sidenav-menu-heading
-                | Addons
+                | 임시
             
             a.nav-link(href='charts.html')
                 .sb-nav-link-icon
                     i.fas.fa-chart-area
-                | Charts
+                | 임시1
                 
             a.nav-link(href='tables.html')
                 .sb-nav-link-icon
                     i.fas.fa-table
-                | Tables
+                | 임시2
+
+            a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#collapseLayouts' aria-expanded='false' aria-controls='collapseLayouts')
+                .sb-nav-link-icon
+                    i.fas.fa-columns
+                | 임시3
+                .sb-sidenav-collapse-arrow
+                    i.fas.fa-angle-down
+            #collapseLayouts.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordion')
+                nav.sb-sidenav-menu-nested.nav
+                    a.nav-link(href='layout-static.html') Static Navigation
+                    a.nav-link(href='layout-sidenav-light.html') Light Sidenav
+
+
                         
     .sb-sidenav-footer
-        
         .small Logged in as:
         | 관리자01
