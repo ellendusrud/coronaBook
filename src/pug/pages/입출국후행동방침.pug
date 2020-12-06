@@ -1,0 +1,21 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var pageTitle = '입출국 후 행동방침'
+    - var sidenavStyle = 'sb-sidenav-dark'
+
+block content
+    .container-fluid
+        include includes/page-header.pug
+        
+        .card.mb-4
+            .card-body
+                p.mb-0.
+                    This page is an example of using static navigation.   TEST
+                
+   
+        div(style='height: 100vh;')
+            
+        .card.mb-4
+            .card-body
+                | When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.
