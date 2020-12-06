@@ -2,4 +2,4 @@
 
 ## 개요 안내
 
-[![SB Admin Preview](https://dt20gw.hyosungitx.com/cimg/00/ZU/cf/jV/2/bbs/000001wit_0_img_9.jpg)](
+[(https://dt20gw.hyosungitx.com/cimg/00/ZU/cf/jV/2/bbs/000001wit_0_img_9.jpg)]
