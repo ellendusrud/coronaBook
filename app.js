@@ -6,6 +6,7 @@ http.createServer((req, res) => {
         if(err) {
             throw err;
         }
+        res.setHeader('Access-Control-Allow-Credentials', true);
         res.end(data);
     });
 }).listen(8080, () => {
