@@ -23,60 +23,22 @@ nav(class=['sb-sidenav', 'accordion'] class=sidenavStyle)#sidenavAccordion
                     i.fas.fa-plane-arrival
                 | 입출국 후 행동방침
                                     
-
-            #collapsePages.collapse(aria-labelledby='headingTwo', data-parent='#sidenavAccordion')
-                nav.sb-sidenav-menu-nested.nav.accordion#sidenavAccordionPages
-                    a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#pagesCollapseAuth' aria-expanded='false' aria-controls='pagesCollapseAuth')
-                        | Authentication
-                        .sb-sidenav-collapse-arrow
-                            i.fas.fa-angle-down
-                    #pagesCollapseAuth.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordionPages')
-                        nav.sb-sidenav-menu-nested.nav
-                            a.nav-link(href='login.html') Login
-                            a.nav-link(href='register.html') Register
-                            a.nav-link(href='password.html') Forgot Password
-                    a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#pagesCollapseError' aria-expanded='false' aria-controls='pagesCollapseError')
-                        | Error
-                        .sb-sidenav-collapse-arrow
-                            i.fas.fa-angle-down
-                    #pagesCollapseError.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordionPages')
-                        nav.sb-sidenav-menu-nested.nav
-                            a.nav-link(href='401.html') 401 Page
-                            a.nav-link(href='404.html') 404 Page
-                            a.nav-link(href='500.html') 500 Page
-
-            a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#collapseLayouts' aria-expanded='false' aria-controls='collapseLayouts')
+            a.nav-link(href='layout-static.html') 
                 .sb-nav-link-icon
                     i.fas.fa-clipboard-list
-                | 코로나 경험 게시판
-                .sb-sidenav-collapse-arrow
-                    i.fas.fa-angle-down
-            #collapseLayouts.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordion')
-                nav.sb-sidenav-menu-nested.nav
-                    a.nav-link(href='layout-static.html') Static Navigation
-                    a.nav-link(href='layout-sidenav-light.html') Light Sidenav
+                | 코로나 경험 게시판                                    
 
-            a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#collapseLayouts' aria-expanded='false' aria-controls='collapseLayouts')
+            a.nav-link(href='layout-static.html') 
                 .sb-nav-link-icon
-                    i.fas.fa-columns
+                    i.fas.fa-address-book
                 | 출입국 관련 연락처 정보
-                .sb-sidenav-collapse-arrow
-                    i.fas.fa-angle-down
-            #collapseLayouts.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordion')
-                nav.sb-sidenav-menu-nested.nav
-                    a.nav-link(href='layout-static.html') Static Navigation
-                    a.nav-link(href='layout-sidenav-light.html') Light Sidenav
 
-            a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#collapseLayouts' aria-expanded='false' aria-controls='collapseLayouts')
+            a.nav-link(href='layout-sidenav-light.html') 
                 .sb-nav-link-icon
-                    i.fas.fa-columns
-                | 외교부 최신 안전소식
-                .sb-sidenav-collapse-arrow
-                    i.fas.fa-angle-down
-            #collapseLayouts.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordion')
-                nav.sb-sidenav-menu-nested.nav
-                    a.nav-link(href='layout-static.html') Static Navigation
-                    a.nav-link(href='layout-sidenav-light.html') Light Sidenav
+                    i.fas.fa-newspaper
+                | 외교부 최신 안전소식   
+
+ 
 
                             
             .sb-sidenav-menu-heading
@@ -108,3 +70,25 @@ nav(class=['sb-sidenav', 'accordion'] class=sidenavStyle)#sidenavAccordion
         | 관리자01                    
 
 
+//-
+
+            #collapsePages.collapse(aria-labelledby='headingTwo', data-parent='#sidenavAccordion')
+                nav.sb-sidenav-menu-nested.nav.accordion#sidenavAccordionPages
+                    a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#pagesCollapseAuth' aria-expanded='false' aria-controls='pagesCollapseAuth')
+                        | Authentication
+                        .sb-sidenav-collapse-arrow
+                            i.fas.fa-angle-down
+                    #pagesCollapseAuth.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordionPages')
+                        nav.sb-sidenav-menu-nested.nav
+                            a.nav-link(href='login.html') Login
+                            a.nav-link(href='register.html') Register
+                            a.nav-link(href='password.html') Forgot Password
+                    a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#pagesCollapseError' aria-expanded='false' aria-controls='pagesCollapseError')
+                        | Error
+                        .sb-sidenav-collapse-arrow
+                            i.fas.fa-angle-down
+                    #pagesCollapseError.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordionPages')
+                        nav.sb-sidenav-menu-nested.nav
+                            a.nav-link(href='401.html') 401 Page
+                            a.nav-link(href='404.html') 404 Page
+                            a.nav-link(href='500.html') 500 Page
