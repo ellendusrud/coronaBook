@@ -1,7 +1,7 @@
 extends ../layouts/dashboard.pug
 
 block config
-    - var pageTitle = '항공 운항정보'
+    - var pageTitle = '외교부 최신 안전소식'
     - var sidenavStyle = 'sb-sidenav-dark'
 
 block content
