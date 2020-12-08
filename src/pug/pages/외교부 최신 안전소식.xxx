@@ -1,7 +1,7 @@
 extends ../layouts/dashboard.pug
 
 block config
-    - var pageTitle = '입출국 후 행동방침'
+    - var pageTitle = '외교부 최신 안전소식'
     - var sidenavStyle = 'sb-sidenav-dark'
 
 block content
@@ -13,7 +13,7 @@ block content
                 p.mb-0.
                     This page is an example of using static navigation. By removing the <code>.sb-nav-fixed</code> class from the <code>body</code>, the top navigation and side navigation will become static on scroll. Scroll down this page to see an example.
         
-        div(style='height: 70vh;')
+        div(style='height: 50vh;')
             
         .card.mb-4
             .card-body
