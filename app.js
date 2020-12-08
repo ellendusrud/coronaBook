@@ -1,3 +1,16 @@
+var whitelist = ['*']
+
+var corsOptions = {
+    origin: function(origin, callback){
+        var isWhitelisted = whitelist.indexOf(origin) !== -1;
+        callback(null, isWhitelisted);
+        // callback expects two parameters: error and options
+    },
+    credentials:true
+}
+
+app.use( cors(corsOptions) );
+
 // const http = require('http');
 // const fs = require('fs');
 
