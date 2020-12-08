@@ -1,5 +1,5 @@
 extends ../layouts/dashboard.pug
-//- include ../src/js/build.js
+
 
 block config
     - var bodyClass = 'sb-nav-fixed'
@@ -17,19 +17,40 @@ block content
             .col-xl-3.col-md-6
                 .card.bg-primary.text-white.mb-4
                     .card-body
-                        //- doctype html
-                        //- head
-                        //- h1.h1-clock
-                      
+                        html(lang="ko")
+                         head
+                            body
+                                h1 현재 시간 
+                                   script. 
+                                    function getTime(){
+                                        const time = new Date();
+                                        const h = time.getHours();
+                                        const min = time.getMinutes();
+                                        const sec = time.getSeconds();
+                                        document.getElementByld("Times").innerHTML = h+":"+min+":"+sec;
+                                        //clock.innerHTML = hour +":" + minutes + ":"+seconds;
+                                        //clock.innerHTML = `${hour<10 ? `0${hour}`:hour}:${minutes<10 ? `0${minutes}`:minutes}:${seconds<10 ? `0${seconds}`:seconds}`
+                                        console.log(h+':'+min+':'+sec);
+                                    }
 
 
-                         
+                                    function init(){
+                                        setInterval(getTime, 1000);
+                                    }
 
-                    .card-footer.d-flex.align-items-center.justify-content-between
-                        a(href='#').small.text-white.stretched-link
-                            | View Details
-                        .small.text-white
-                            i.fas.fa-angle-right
+                                    init();
+                                    script. 
+                                    h2 현재타임
+
+                       
+
+                    //- .card-footer.d-flex.align-items-center.justify-content-between
+                    //-     a(href='#').small.text-white.stretched-link
+                    //-         | View Details
+                    //-     .small.text-white
+                    //-         i.fas.fa-angle-right
+
+
             .col-xl-3.col-md-6
                 .card.bg-warning.text-white.mb-4
                     .card-body
