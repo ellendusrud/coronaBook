@@ -9,8 +9,9 @@
         <!--meta(http-equiv='Content-Security-Policy' content='upgrade-insecure-requests')-->
         <title>국가별 긴급 연락처 - 코로나Book</title>
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
-        <link href="assets/css/contact.css" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous" />
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=' crossorigin="anonymous" />
+        <link href="assets/css/contactDetail.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
@@ -85,11 +86,15 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <div class="page-content container note-has-grid">
-                        <section class="section services-section" id="services">
-                            <div><div class="row" id="insertHere"></div></div>
-                        </section>
-                    </div>
+                    <section class="ftco-section ftco-faqs">
+                        <div class="container">
+                            <div class="heading-section mb-4 mt-5 mt-lg-0 section-title"><h2 class="mb-3" id="countryName"></h2></div>
+                            <div class="row">
+                                <div class="col-lg-6 order-md-last mb-4"></div>
+                                <div class="col-lg-12"><div class="myaccordion w-100 bg-white" id="accordion" aria-multiselectable="true" style="border-radius: 10px; padding: 5%"></div></div>
+                            </div>
+                        </div>
+                    </section>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
@@ -101,7 +106,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
-        <script src="js/contact.js"></script>
+        <script src="js/contactDetail.js"></script>
         <!--script(src='js/cors.js')-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
     </body>
