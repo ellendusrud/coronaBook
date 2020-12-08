@@ -56,26 +56,6 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-newspaper"></i></div>
                                 외교부 최신 안전소식
                             </a>
-                            <div class="sb-sidenav-menu-heading">임시</div>
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                임시1
-                            </a>
-                            <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                임시2
-                            </a>
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                임시3
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
-                                </nav>
-                            </div>
                         </div>
                     </div>
                 </nav>
@@ -88,16 +68,84 @@
                             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                             <li class="breadcrumb-item active">코로나 경험 게시판</li>
                         </ol>
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <p class="mb-0">
-                                    This page is an example of using static navigation. By removing the
-                                    <code>.sb-nav-fixed</code>
-                                    class from the
-                                    <code>body</code>
-                                    , the top navigation and side navigation will become static on scroll. Scroll down this page to see an example.
-                                </p>
-                            </div>
+                        <div id="layoutSidenav_content">
+                            <main>
+                                <div class="container-fluid">
+                                    <div style=" float:right" >
+                                        <form class="navbar-form navbar-left" role="search">
+                                            <div class="form-group" style="width: 300px;">
+                                                <input type="text" class="form-control" placeholder="Search" style="width: 220px; display: inline">
+                                                <button type="submit" class="btn btn-default navbar-btn">검색</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div>
+                                        <table width="100%" class="table table-hover" style="text-align: center">
+                                            <thead>
+                                            <tr>
+                                                <th style="width: 50px">번호</th>
+                                                <th style="width: 500px;">제목</th>
+                                                <th style="width: 150px">작성자</th>
+                                                <th  style="width: 150px">날짜</th>
+                                                <th  style="width: 50px">조회</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td><a href="#" >무증상 감염자인지 어떻게 확인하나요 ??ㅠ</a></td>
+                                                <td>Otto</td>
+                                                <td>2020-12-08</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td><a href="#" >열이 37도인데 코로나인가요 ??</a></td>
+                                                <td>Thornton</td>
+                                                <td>2020-12-08</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td><a href="#" >자꾸 토하고 열나는 거 같은데 코로나 인가요 ??</a></td>
+                                                <td>the Bird</td>
+                                                <td>2020-12-08</td>
+                                                <td>0</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <div style="position: absolute; right: 50px">
+                                            <a href="게시판%20글쓰기.html"><button type="button" class="btn btn-primary" id="btn-save" onclick="alert('미구현')" >글쓰기</button></a>
+                                        </div>
+                                        <div id="pageing" ><ul  type="none" >
+                                            <li><a href="#"><img src="assets/img/prev_10.gif"></a></li>
+                                            <li><a href="#"><img src="assets/img/prev_1.gif"></a></li>
+                                            <li><a href="#">1</a></li>
+                                            <!--
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            -->
+                                            <li><a href="#"><img src="assets/img/next_1.gif"></a></li>
+                                            <li><a href="#"><img src="assets/img/next_10.gif"></a></li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                            <footer class="py-4 bg-light mt-auto">
+                                <div class="container-fluid">
+                                    <div class="d-flex align-items-center justify-content-between small">
+                                        <div class="text-muted">Copyright &copy; 팀명 2020</div>
+                                        <div>
+                                            <a href="#">Privacy Policy</a>
+                                            &middot;
+                                            <a href="#">Terms &amp; Conditions</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
                         </div>
                         <div style="height: 50vh"></div>
                         <div class="card mb-4"><div class="card-body">When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.</div></div>
