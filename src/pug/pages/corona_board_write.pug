@@ -1,0 +1,28 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var pageTitle = '코로나 경험 게시판'
+    - var sidenavStyle = 'sb-sidenav-dark'
+
+block content
+    .container-fluid
+        include includes/page-header.pug
+        .card.mb-4
+            .card-body
+                div
+                    h1 &#xAC8C;&#xC2DC;&#xAE00; &#xB4F1;&#xB85D;
+                    .col-md-12
+                        .clo-md4
+                            form
+                                .form-group
+                                    label(for='title') &#xC81C;&#xBAA9;
+                                    input#title.form-control(type='text' placeholder='제목을 입력하세요')
+                                .form-group
+                                    label(for='author') &#xC791;&#xC131;&#xC790;
+                                    input#author.form-control(type='text' placeholder='작성자를 입력하세요')
+                                .form-group
+                                    label(for='content') &#xB0B4;&#xC6A9;
+                                    textarea#content.form-control(rows='10' placeholder='내용을 입력하세요')
+                            a.btn.btn-secondary(href='코로나%20경험%20게시판.html' role='button') &#xCDE8;&#xC18C;
+                            button#btn-save.btn.btn-primary(type='button' onclick="alert('DB 연동 필요')") &#xB4F1;&#xB85D;
+
