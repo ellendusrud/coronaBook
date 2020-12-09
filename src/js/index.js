@@ -12,7 +12,7 @@ $(document).ready(function () {
     var myurl = "http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19NatInfStateJson?serviceKey=yrZ2sPGNKzxFIizOwLKGvhg5w76gFuzzCvdFxfrHDGNmjVeuQ0KEe%2BqY639AQVgeeOBYMs4ZgD1xap011UcUKw%3D%3D&pageNo=1&startCreateDt=" + updateDate + "&endCreateDt=" + updateDate;
     $.ajax({
         url : myurl,
-        dataType : "xml",
+        dataType : "jsonp",
         success : function (data) {
             $(data).find("item").each(function (){
                 var str = "<tr>\n" + "<td>"
