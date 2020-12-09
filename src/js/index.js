@@ -9,6 +9,8 @@ $(document).ready(function () {
     var dateToDisplay = "(기준 : " + year + "년 " + month + "월 " + day + "일)"
     $("#insertDate").append(dateToDisplay);
 
+    var alr;
+    
     var myurl = "http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19NatInfStateJson?serviceKey=yrZ2sPGNKzxFIizOwLKGvhg5w76gFuzzCvdFxfrHDGNmjVeuQ0KEe%2BqY639AQVgeeOBYMs4ZgD1xap011UcUKw%3D%3D&pageNo=1&startCreateDt=" + updateDate + "&endCreateDt=" + updateDate;
     $.ajax({
         url : myurl,
@@ -41,5 +43,9 @@ $(document).ready(function () {
             alert("error");
         }
     })
+
+    alr : function(alert) {
+        alert("준비중 입니다");
+    }
 
 })
