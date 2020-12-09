@@ -1,7 +1,9 @@
 $(document).ready(function() {
     var myurl = "http://apis.data.go.kr/1262000/CountryBasicService/getCountryBasicList?serviceKey=yrZ2sPGNKzxFIizOwLKGvhg5w76gFuzzCvdFxfrHDGNmjVeuQ0KEe%2BqY639AQVgeeOBYMs4ZgD1xap011UcUKw%3D%3D&numOfRows=197&pageNo=1";
+
     $.ajax({
         url : myurl,
+        // headers: { "Access-Control-Allow-Origin" : "*"},
         dataType : "xml",
         success : function (data){
             $(data).find("item").each(function (){
