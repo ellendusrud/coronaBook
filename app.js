@@ -1,8 +1,9 @@
-// let express = require("express");
-// let bodyParser = require("body-parser");
-// let cors = require("cors");
-// let app = express();
-//
+let express = require("express");
+let cors = require("cors");
+let app = express();
+
+app.use(cors());
+
 // let cors_origin = [`http://apis.data.go.kr`];
 //
 // app.use(
@@ -11,11 +12,11 @@
 //         credentials: true, // true로 하면 설정한 내용을 response 헤더에 추가 해줍니다.
 //     })
 // );
-
+//
 // var cors = require('cors'); //import cors module
 // var express = require('express');
 // var app = express();
-//
+// //
 // var whitelist = [http://apis.data.go.kr']; //white list consumers
 // var corsOptions = {
 //     origin: function (origin, callback) {
