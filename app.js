@@ -1,8 +1,6 @@
-let express = require("express");
-let cors = require("cors");
-let app = express();
-
-app.use(cors());
+app.get('/', (req,res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+}
 
 // let cors_origin = [`http://apis.data.go.kr`];
 //
