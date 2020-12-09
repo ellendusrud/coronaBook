@@ -64,19 +64,20 @@ nav.sb-topnav.navbar.navbar-expand.navbar-dark.bg-dark
             a(href='index.html') Dashboard
           li.breadcrumb-item.active &#xC678;&#xAD50;&#xBD80; &#xCD5C;&#xC2E0; &#xC548;&#xC804;&#xC18C;&#xC2DD;
         // <div class="card mb-4">
-        // 오른쪽으로 이도
+        // 오른쪽으로 이동
         div(style='float:right')
           input#text(type='text' value='' placeholder='국가이름')
           button#call &#xAC80;&#xC0C9;
         br
         br
-        .(class='”table_responsive“')
+        // 반응형 테이블 클래스로 table클래스 감싸
+        .table-responsive
           table.table
             thead
               tr.table-secondary.text-center
                 td &#xAD6D;&#xAC00;&#xC774;&#xB984;
                 td &#xC8FC;&#xC694;&#xC0AC;&#xD56D;
-                // <td>세부내용</td>
+                td &#xC138;&#xBD80;&#xB0B4;&#xC6A9;
                 td &#xB0A0;&#xC9DC;
             tbody#tblShow
               //
@@ -86,17 +87,15 @@ nav.sb-topnav.navbar.navbar-expand.navbar-dark.bg-dark
                 <td id="content"></td>
                 <td width="100" id="date"></td>
                 </tr>
+        em &#xB354; &#xCD94;&#xAC00;&#xD560; &#xC608;&#xC815;
         // </div>
         div(style='height: 50vh')
-        .right-box
-          em &#xB354; &#xCD94;&#xAC00;&#xD560; &#xC608;&#xC815;
     footer.py-4.bg-light.mt-auto
       .container-fluid
         .d-flex.align-items-center.justify-content-between.small
           .text-muted Copyright &copy; &#xACF5;&#xACF5;&#xB370;&#xC774;&#xD130;, &#xC138;&#xC0C1;&#xC744; &#xAD6C;&#xD558;&#xB2E4; 2020
 script(src='https://code.jquery.com/jquery-3.5.1.min.js' crossorigin='anonymous')
 script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js' crossorigin='anonymous')
-// 이 html에 밑에 js파일들을 이용해 데이터를 띄우겠다
 script(src='js/scripts.js')
 script(src='js/safety.js')
 script(src='js/searchSafety.js')
