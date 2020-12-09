@@ -20,4 +20,12 @@
 # is commented out by default.
 #.vscode/
 node_modules
+*.class
+*.log
+*.pyc
+*.swp
 .DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
