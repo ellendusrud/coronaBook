@@ -97,9 +97,9 @@ block content
                         canvas#myBarChart(width='100%', height='40')
         
         .card.mb-4
-            .card-header
+            #insertDate.card-header
                 i.fas.fa-table.mr-1
-                | DataTable Example
+                | 세계 코로나 현황
             .card-body
                 include includes/datatable.pug
 
@@ -108,6 +108,7 @@ append scripts
     script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', crossorigin='anonymous')
     script(src='assets/demo/chart-area-demo.js')
     script(src='assets/demo/chart-bar-demo.js')
+    script(src='js/index.js')
     
     script(src='https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js', crossorigin='anonymous')
     script(src='https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js', crossorigin='anonymous')
