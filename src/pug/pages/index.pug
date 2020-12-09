@@ -13,6 +13,10 @@ append css
 block content
     .container-fluid
         include includes/page-header.pug
+        html(lang="ko")
+                         head
+                            body
+                                 h2 업데이트 시간 2020-12-09 00:00
         .row
             .col-xl-3.col-md-6
                 .card.bg-primary.text-white.mb-4
@@ -20,7 +24,9 @@ block content
                         html(lang="ko")
                          head
                             body
-                                h1 현재 시간 
+                                h2 국내 확진환자
+                                 h3 국내 누적 확진환자 39,432명 
+                                 h3 전일대비 686명 증가
                                    script. 
                                     function getTime(){
                                         const time = new Date();
@@ -40,61 +46,93 @@ block content
 
                                     init();
                                     script. 
-                                    h2 현재타임
 
                        
 
-                    //- .card-footer.d-flex.align-items-center.justify-content-between
-                    //-     a(href='#').small.text-white.stretched-link
-                    //-         | View Details
-                    //-     .small.text-white
-                    //-         i.fas.fa-angle-right
+                    .card-footer.d-flex.align-items-center.justify-content-between
+                        a(href='#').small.text-white.stretched-link
+                            | 자세히 확인하기
+                            script. 
+                                function al(tasks){
+                                    alert('준비중...')
+                                                 }
+                             
+                        .small.text-white
+                            i.fas.fa-angle-right
 
 
             .col-xl-3.col-md-6
                 .card.bg-warning.text-white.mb-4
                     .card-body
-                        | Warning Card
+                        html(lang="ko")
+                         head
+                            body
+                                h2 세계 확진환자
+                                 h3 세계 누적 확진환자 67,591,869명 
+                                 h3 전일대비 517,565명 증가
+                                 h4 발생국가수: 221개국
+
+                        
                     .card-footer.d-flex.align-items-center.justify-content-between
                         a(href='#').small.text-white.stretched-link
-                            | View Details
+                            | 자세히 확인하기
                         .small.text-white
                             i.fas.fa-angle-right
+
             .col-xl-3.col-md-6
                 .card.bg-success.text-white.mb-4
                     .card-body
-                        | Success Card
+                      html(lang="ko")
+                         head
+                            body
+                                h2 국내 검사중 환자
+                                 h3 75,080명 
+                                 h3 전일대비 3,806명 증가
+
+
+
                     .card-footer.d-flex.align-items-center.justify-content-between
                         a(href='#').small.text-white.stretched-link
-                            | View Details
+                            | 자세히 확인하기
                         .small.text-white
                             i.fas.fa-angle-right
+
+
             .col-xl-3.col-md-6
                 .card.bg-danger.text-white.mb-4
                     .card-body
-                        | Danger Card
+                     html(lang="ko")
+                         head
+                            body
+                                h2 사망환자
+                                 h3 국내 : 556명 / 4명 증가
+                                 h3 세계 : 1,544,535명 / 8,478명 증가
+
+
+
+
                     .card-footer.d-flex.align-items-center.justify-content-between
                         a(href='#').small.text-white.stretched-link
-                            | View Details
+                            | 자세히 확인하기
                         .small.text-white
                             i.fas.fa-angle-right
         .row
 
-            .col-xl-6
-                .card.mb-4
-                    .card-header
-                        i.fas.fa-chart-area.mr-1
-                        | Area Chart Example
-                    .card-body
-                        canvas#myAreaChart(width='100%', height='40')
+            //- .col-xl-6
+            //-     .card.mb-4
+            //-         .card-header
+            //-             i.fas.fa-chart-area.mr-1
+            //-             | Area Chart Example
+            //-         .card-body
+            //-             canvas#myAreaChart(width='100%', height='40')
                     
-            .col-xl-6
-                .card.mb-4
-                    .card-header
-                        i.fas.fa-chart-bar.mr-1
-                        | Bar Chart Example
-                    .card-body
-                        canvas#myBarChart(width='100%', height='40')
+            //- .col-xl-6
+            //-     .card.mb-4
+            //-         .card-header
+            //-             i.fas.fa-chart-bar.mr-1
+            //-             | Bar Chart Example
+            //-         .card-body
+            //-             canvas#myBarChart(width='100%', height='40')
         
         .card.mb-4
             #insertDate.card-header
