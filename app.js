@@ -1,3 +1,7 @@
+let express = require("express");
+let cors = require("cors");
+let app = express();
+
 app.get('/', (req,res) => {
   res.header("Access-Control-Allow-Origin", "*");
 }
