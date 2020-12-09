@@ -6,10 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <!--meta(http-equiv='Content-Security-Policy' content='upgrade-insecure-requests')-->
         <title>코로나 경험 게시판 - 코로나Book</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+         <style>
+        #pageing{
+            position: absolute;
+            left: 45%;
+            margin: 0 auto;
+        }
+        #pageing  ul  li {
+            float: left;
+            padding: 2px;
+            margin: 3px;
+            ;
+        }
+        #pageing  ul  li a{
+            color:black;
+        }
+         td>a{
+            color: black;
+        }
+    </style>
     </head>
     <body>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -45,12 +63,12 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-plane-arrival"></i></div>
                                 출입국 주요 행동방침
                             </a>
-                            <a class="nav-link" href="././코로나 경험 게시판.html">
+                            <a class="nav-link" href="코로나 경험 게시판.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-clipboard-list"></i></div>
                                 코로나 경험 게시판
                             </a>
                             <a class="nav-link" href="contact.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-phone-book"></i></div>
                                 국가별 긴급 연락처
                             </a>
                             <a class="nav-link" href="외교부 최신 안전소식.html">
@@ -63,27 +81,79 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <div class="container-fluid">
-                        <h1 class="mt-4">코로나 경험 게시판</h1>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">코로나 경험 게시판</li>
-                        </ol>
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <p class="mb-0">
-                                    This page is an example of using static navigation. By removing the
-                                    <code>.sb-nav-fixed</code>
-                                    class from the
-                                    <code>body</code>
-                                    , the top navigation and side navigation will become static on scroll. Scroll down this page to see an example.
-                                </p>
-                            </div>
-                        </div>
-                        <div style="height: 50vh"></div>
-                        <div class="card mb-4"><div class="card-body">When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.</div></div>
-                    </div>
-                </main>
+                        <div class="container-fluid">
+                            <h1 class="mt-4">코로나 경험 게시판</h1>
+                            <ol class="breadcrumb mb-4">
+                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                <li class="breadcrumb-item active">코로나 경험 게시판</li>
+                            </ol>
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                        <div style=" float:right" >
+                                            <form class="navbar-form navbar-left" role="search">
+                                                <div class="form-group" style="width: 300px;">
+                                                    <input type="text" class="form-control" placeholder="Search" style="width: 220px; display: inline">
+                                                    <button type="submit" class="btn btn-default navbar-btn">검색</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div>
+                                            <table width="100%" class="table table-hover" style="text-align: center">
+                                                <thead>
+                                                <tr>
+                                                    <th style="width: 50px">번호</th>
+                                                    <th style="width: 500px;">제목</th>
+                                                    <th style="width: 150px">작성자</th>
+                                                    <th  style="width: 150px">날짜</th>
+                                                    <th  style="width: 50px">조회</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td><a href="#" >무증상 감염자인지 어떻게 확인하나요 ??ㅠ</a></td>
+                                                    <td>Otto</td>
+                                                    <td>2020-12-08</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><a href="#" >열이 37도인데 코로나인가요 ??</a></td>
+                                                    <td>Thornton</td>
+                                                    <td>2020-12-08</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td><a href="#" >자꾸 토하고 열나는 거 같은데 코로나 인가요 ??</a></td>
+                                                    <td>the Bird</td>
+                                                    <td>2020-12-08</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <div style="position: absolute; right: 50px">
+                                                <a href="corona_board_write.html"><button type="button" class="btn btn-primary" id="btn-save" onclick="alert('미구현')" >글쓰기</button></a>
+                                            </div>
+                                            <div id="pageing" ><ul  type="none" >
+                                                <li><a href="#"><img src="../src/assets/img/prev_10.gif"></a></li>
+                                                <li><a href="#"><img src="../src/assets/img/prev_1.gif"></a></li>
+                                                <li><a href="#">1</a></li>
+                                                <!--
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                -->
+                                                <li><a href="#"><img src="../src/assets/img/next_1.gif"></a></li>
+                                                <li><a href="#"><img src="../src/assets/img/next_10.gif"></a></li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                            <div style="height: 50vh"></div>
+                           </div></div>
+                    </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small"><div class="text-muted">Copyright &copy; 최강 해커톤 2020</div></div>
